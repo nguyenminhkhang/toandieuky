@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    background-color: black;
+    height: 40px;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.nav a {
+    padding-right: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white ;
+    padding-left: 30px;
+}
+
+.lopbox div {
+    border: 5px solid black;
+    height: 500px;
+}
+
+.lopbox {
+    margin-top: 10px;
+}
+
+
+.lopbox h1 {
+    padding: 10px 0 0 0;
+    color: black;
+}
+.end {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+.end h3 {
+    padding-top: 30px;
+}
+
+.flex {
+    transition: 1s;
+}
+
+.flex:hover {
+    box-shadow: 10px 10px 100px grey;
+}
