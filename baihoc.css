@@ -3,7 +3,7 @@
     margin: 0;
 }
 nav {
-    background-color: black;
+    background-color: rgb(52, 235, 204);
     height: 40px;
     text-decoration: none;
     padding-top: 10px;
@@ -81,3 +81,6 @@ p {
     padding-top: 30px;
 }
 
+.body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
