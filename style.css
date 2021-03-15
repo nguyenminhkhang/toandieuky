@@ -83,6 +83,7 @@ video {
 
 .lop-hoc {
     transition: 1s;
+    background-color: white;
 }
 
 .lop-hoc:hover {
