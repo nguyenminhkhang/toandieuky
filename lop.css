@@ -47,6 +47,7 @@ nav {
 
 .flex {
     transition: 1s;
+    border-radius: 30px;
 }
 
 .flex:hover {

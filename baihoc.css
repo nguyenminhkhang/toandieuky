@@ -84,3 +84,8 @@ p {
 .body {
     font-family: 'Montserrat Alternates', sans-serif;
 }
+
+.clock {
+    width: 30%;
+}
+
