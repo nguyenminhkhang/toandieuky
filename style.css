@@ -89,3 +89,8 @@ video {
 .lop-hoc:hover {
     box-shadow: 10px 10px 100px grey;
 }
+
+body {
+    background: rgb(151,147,217);
+    background: linear-gradient(90deg, rgba(151,147,217,1) 1%, rgba(37,227,228,1) 50%, rgba(17,215,255,1) 100%);
+}
