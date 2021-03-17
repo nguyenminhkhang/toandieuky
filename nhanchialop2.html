@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@100&family=Biryani:wght@200&display=swap" rel="stylesheet">
+    <link href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="./baihoc.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&display=swap" rel="stylesheet">
+</head>
+<body style="font-family: 'Paytone One', sans-serif; font-weight: 850;">
+<div>
+    <nav style="position: fixed;">
+        <div class="nav">
+            <a href="./home.html"><i class="fas fa-square-root-alt"></i></a>
+            <a href="./lop1.html">Lớp 1</a>
+            <a href="./lop2.html">Lớp 2</a>
+            <a href="./lop3.html">Lớp 3</a>
+            <a href="./lop4.html">Lớp 4</a>
+            <a href="./lop5.html">Lớp 5</a>
+    </nav>
+<div style="font-family: 'Montserrat Alternates', sans-serif; background-color: rgb(255, 242, 176);" class="body">
+    <div style="margin: 0 100px 0 100px">
+        <h1 style="padding: 100px 0 30px 0 ; text-align: center;">Nhân chia</h1>
+        <h2 style="padding-left: 30px; padding-bottom: 30px; font-weight: bolder;">I. Nhân</h2>
+        <div style="padding-left: 20px;" id="content">
+            <div style="font-size: x-large;">
+                <p style="font-weight: 800; padding-top: 50px; padding-bottom: 30px;">
+                    Phép nhân là gì nhỉ?
+                </p>
+                <p style="font-weight: 800; padding-top: 50px; padding-bottom: 30px;">
+                    Nếu các em chưa biết, thì phép nhân là nhiều phép cộng kết hợp với nhau. Ví dụ thế này
+                    chẳng hạn:
+                </p>
+                <h2 style="padding:60px 0 30px 0; font-weight: bolder;">Ví dụ 1</h2>
+                <h1 style="padding-bottom: 20px; text-align: center;">3 x 5 </h1>
+                <p style="padding-bottom: 20px;">Phép tính trên đọc là “ba nhân năm”. Dấu nhân là chữ “x”.</p>
+                <p style="padding-bottom: 60px;">Ở phép nhân trên, số 3 được lặp lại 5 lần đấy các em ạ! Như thế này này:</p>
+                <h1 style="padding-bottom: 20px; text-align: center;">3 + 3 + 3 + 3 + 3</h1>
+                <p style="padding-bottom: 20px;">Và kết quả là gì nhỉ</p>
+                <p style="padding-bottom: 20px;">Chọn 1 đáp án đúng</p>
+            <hr />
+          
+            <div id='block-11' style='padding: 10px;'>
+              <label for='option-11' style=' padding: 5px; font-size: 2.5rem;'>
+                <input type='radio' name='option' value='6/24' id='option-11' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                2</label>
+              <span id='result-11'></span>
+            </div>
+            <hr />
+          
+            <div id='block-12' style='padding: 10px;'>
+              <label for='option-12' style=' padding: 5px; font-size: 2.5rem;'>
+                <input type='radio' name='option' value='6' id='option-12' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                0</label>
+              <span id='result-12'></span>
+            </div>
+            <hr />
+          
+            <div id='block-13' style='padding: 10px;'>
+              <label for='option-13' style=' padding: 5px; font-size: 2.5rem;'>
+                <input type='radio' name='option' value='1/3' id='option-13' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                1</label>
+              <span id='result-13'></span>
+            </div>
+            <hr />
+          
+            <div id='block-14' style='padding: 10px;'>
+              <label for='option-14' style=' padding: 5px; font-size: 2.5rem;'>
+                <input type='radio' name='option' value='1/6' id='option-14' style='transform: scale(1.6); margin-right: 10px; vertical-align: middle; margin-top: -2px;' />
+                15</label>
+              <span id='result-14'></span>
+            </div>
+            <hr />
+            <button type='button' onclick='displayAnswer1()' style='width: 100px; height: 40px; border-radius: 3px; background-color: lightblue; font-weight: 700; padding-bottom: 0;'>Nộp bài</button>
+          </div>
+          <a id='showanswer1'></a>
+          <script>
+            //    The function evaluates the answer and displays result
+            function displayAnswer1() {
+              if (document.getElementById('option-11').checked) {
+                document.getElementById('block-11').style.border = '3px solid limegreen'
+                document.getElementById('result-11').style.color = 'red'
+                document.getElementById('result-11').innerHTML = 'Cố lên! Sắp làm được rồi'
+              } 
+              if (document.getElementById('option-12').checked) {
+                document.getElementById('block-12').style.border = '3px solid red'
+                document.getElementById('result-12').style.color = 'red'
+                document.getElementById('result-12').innerHTML = 'Ồ, thử lại nhé!'
+              }
+              if (document.getElementById('option-13').checked) {
+                document.getElementById('block-13').style.border = '3px solid red'
+                document.getElementById('result-13').style.color = 'red'
+                document.getElementById('result-13').innerHTML = 'Gần đúng rồi, cố lên!'
+              }
+              if (document.getElementById('option-14').checked) {
+                document.getElementById('block-14').style.border = '3px solid limegreen'
+                document.getElementById('result-14').style.color = 'green'
+                document.getElementById('result-14').innerHTML = 'Đúng rồi! Giỏi quá!'
+              }
+            }
+            // the functon displays the link to the correct answer
+            function showCorrectAnswer1() {
+              let showAnswer1 = document.createElement('p')
+              showAnswer1.innerHTML = 'Show Corrent Answer'
+              showAnswer1.style.position = 'relative'
+              showAnswer1.style.top = '-180px'
+              showAnswer1.style.fontSize = '1.75rem'
+              document.getElementById('showanswer1').appendChild(showAnswer1)   
+              showAnswer1.addEventListener('click', () => {
+                document.getElementById('block-14').style.border = '3px solid limegreen'
+                document.getElementById('result-14').style.color = 'limegreen'
+                document.getElementById('result-14').innerHTML = 'Đúng rồi! Giỏi quá!'
+                document.getElementById('showanswer1').removeChild(showAnswer1)
+              })
+            }
+          </script>
+    </div>
+<div style="font-size: x-large;">
+    <p style="padding-bottom: 20px;">Các em thấy chưa? Học nhân rất dễ phải không nào?</p>
+    <h2 style="padding:60px 0 30px 0; font-weight: bolder;">Ví dụ 1</h2>
+    <h1 style="padding-bottom: 20px; text-align: center;">43 – 21 = 22</h1>
+    <p style="padding-bottom: 20px;">Trong ví dụ này, chúng ta đang trừ 43 cho 21. Vậy, 43 là số đang bị trừ đi, gọi là số bị trừ.</p>
+    <p style="padding-bottom: 50px;">Còn 21 là số bị trừ.</p>
+    <h2 style="padding-left: 30px; padding-bottom: 30px; font-weight: bolder; font-size: 25px;">III. Cộng có nhớ trong phạm vi 100</h2>
+    <p style="padding-bottom: 50px;">Các em hãy nhìn vào các ví dụ sau nhé</p>
+    <h2 style="padding:60px 0 30px 0; font-weight: bolder;">Ví dụ 1</h2>
+                <h1 style="padding-bottom: 20px; text-align: center;">23 + 47 </h1>
+    <p style="padding-bottom: 50px;">Chúng ta sẽ đặt tính như bình thường nhé!</p>
+    <p style="padding-bottom: 50px;">Cộng hàng đơn vị trước chứ nhỉ? 3 + 7 = 10...</p>
+    <p style="padding-bottom: 100px;">Hmmm... nếu viết 10 ở đây thì sẽ bị tràn sang hàng chục. Vậy chúng ta làm thế nào nhỉ? Các em thử suy nghĩ nhé!</p>
+    <img style="width: 60%; padding-bottom: 100px" src="https://images.pexels.com/photos/4386326/pexels-photo-4386326.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+    <p style="padding-bottom: 20px">Chúng ta sẽ chỉ viết số 0 thôi nhé. Còn số 1 thì nhớ trong đầu.</p>
+    <p style="padding-bottom: 20px">Tiếp theo, chúng ta cộng 2 với 4 đúng không? Kết quả là 6.</p>
+    <p style="padding-bottom: 20px">Các em đừng vội viết số 6 xuống nhé! Trước tiên, hãy cộng 6 với 1 trước, được 7. Bây giờ các em mới viết số 7 xuống!</p>
+    <p style="padding-bottom: 20px">Kết quả của phép tính trên là bao nhiêu nhỉ?</p>
+    <h2 style="padding-left: 30px; padding-bottom: 30px; font-weight: bolder; font-size: 25px;">III. Trừ có nhớ dưới 100</h2>
+    <p style="padding-bottom: 50px;">Chúng ta đã học cộng có nhớ rồi phải không? Vậy còn trừ thì sao nhỉ?</p>
+    <p style="padding-bottom: 50px;">Các em hãy bắt đầu với ví dụ sau nhé:</p>
+    <h2 style="padding:60px 0 30px 0; font-weight: bolder;">Ví dụ 1</h2>
+                <h1 style="padding-bottom: 20px; text-align: center;">33 – 14</h1>
+    <p style="padding-bottom: 50px;">Làm như bình thường thôi! Cộng từ phải sang trái, từ hàng đơn vị sang hàng chục...</p>
+    <p style="padding-bottom: 50px;">Thế nhưng, các em thấy, 3 không trừ được 4 phải không?</p>
+    <p style="padding-bottom: 100px;">Vậy chúng ta làm thế nào nhỉ?</p>
+    <img style="width: 60%; padding-bottom: 100px" src="https://images.pexels.com/photos/355952/pexels-photo-355952.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
+    <p style="padding-bottom: 20px">Ở đây, do 3 không trừ được 4, chúng ta sẽ “mượn” 1 từ hàng chục và thêm vào trước số 3,
+        được 13.</p>
+    <p style="padding-bottom: 20px">Sau đó, các em làm như thường. 13 – 4 = 7.</p>
+    <p style="padding-bottom: 20px">Rồi chuyển sang làm hàng chục. Vì số 3 ở hàng chục đã cho “mượn” 1 nên chỉ còn 2. 2 – 1 = 1, viết 1.</p>
+    <p style="padding-bottom: 20px">Kết quả của phép tính trên là bao nhiêu nhỉ?</p>
+</div>
+</body>
+</html>
