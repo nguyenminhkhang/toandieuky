@@ -27,7 +27,7 @@ function submitQuiz() {
 // function to return correct answer string
   function correctAnswer (correctStringNo, qNumber) {
     console.log("qNumber: " + qNumber);  // logs 1,2,3,4 after called below
-    return ("Câu trả lời đúng cho đồng hồ số #" + qNumber + ": &nbsp;<strong>" +
+    return ("Câu trả lời đúng cho số #" + qNumber + ": &nbsp;<strong>" +
       (document.getElementById(correctStringNo).innerHTML) + "</strong>");
     }
 
